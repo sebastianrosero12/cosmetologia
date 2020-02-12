@@ -1,0 +1,10 @@
+[2020-02-10 02:01:05] local.ERROR: There are no commands defined in the "app" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"app\" namespace. at /home/cbaz/seminario/cosmetologia/vendor/symfony/console/Application.php:598)
+[stacktrace]
+#0 /home/cbaz/seminario/cosmetologia/vendor/symfony/console/Application.php(651): Symfony\\Component\\Console\\Application->findNamespace()
+#1 /home/cbaz/seminario/cosmetologia/vendor/symfony/console/Application.php(236): Symfony\\Component\\Console\\Application->find()
+#2 /home/cbaz/seminario/cosmetologia/vendor/symfony/console/Application.php(148): Symfony\\Component\\Console\\Application->doRun()
+#3 /home/cbaz/seminario/cosmetologia/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#4 /home/cbaz/seminario/cosmetologia/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run()
+#5 /home/cbaz/seminario/cosmetologia/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 

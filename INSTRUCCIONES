@@ -1,0 +1,44 @@
+	1  sudo pacman -S php
+	2  Descargar Xamp desde la pagina de XAMP
+	3  abrir terminal
+    4  cd Descargas/
+    5  chmod 755 xampp-linux-*-installer.run
+    6  sudo ./xampp-linux-*-installer.run
+    7  ls
+    8  mkdir seminario   ---> cear la carpeta donde se trabajara en los proyectos
+    9  ls
+   10  nmap  --> ver los puertos que se estan utilizando
+   11  systemctl status httpd --> estado del servicio apache
+   12  sudo /opt/lampp/lampp start --> iniciar XAMP
+   13  cd seminario/
+   16  php -v -< ver la version php
+   17  sudo pacman -S composer -> instalar composer
+**********LOS COMANDOS A CONTINUACION SE EJECUTAN POR SUGERENCIA DE LA PAGINA DE COMPOSER CREO Q HACE LO MISMO QUE EL COMANDO ANTERIOR:
+   php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   php -r "if (hash_file('sha384', 'composer-setup.php') === 'c5b9b6d368201a9db6f74e2611495f369991b72d9c8cbd3ffbc63edff210eb73d46ffbfce88669ad33695ef77dc76976') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+   php composer-setup.php
+   php -r "unlink('composer-setup.php');"
+*****************************************************************************************
+   23  sudo mv composer.phar /usr/local/bin/composer --> mover este archivo para que luego se llame a laravel como comando
+   24  composer -> verificar que composer funciona correctamente
+   25  composer global require laravel/installer
+   42  touch ~/.bash_profile
+   34  sudo nano ~/.bash_profile -> editar y al final pegar export PATH=/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH
+   37  sudo nano ~/.bashrc ->  editar y al final pegar export PATH=/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH
+   48  source ~/.bashrc -> carga bashrc a la terminal
+   49  source ~/.bash_profile -> carga bash_profile a la terminal
+   50  cd seminario/
+   52  laravel new blog
+***Si aun no funciona se cierra la terminal y se abre otra
+
+
+--------INSTALAR AUTENTICACION
+composer require laravel/ui
+  159  php artisan ui vue --auth
+  160  npm i
+  161  sudo pacman -S npm -->SI NPM NO FUNCIONA
+  162  npm i
+  163  npm run dev
+
+
+
