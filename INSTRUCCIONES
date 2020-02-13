@@ -13,13 +13,11 @@
    13  cd seminario/
    16  php -v -< ver la version php
    17  sudo pacman -S composer -> instalar composer
-**********LOS COMANDOS A CONTINUACION SE EJECUTAN POR SUGERENCIA DE LA PAGINA DE COMPOSER CREO Q HACE LO MISMO QUE EL COMANDO ANTERIOR:
    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
    php -r "if (hash_file('sha384', 'composer-setup.php') === 'c5b9b6d368201a9db6f74e2611495f369991b72d9c8cbd3ffbc63edff210eb73d46ffbfce88669ad33695ef77dc76976') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
    php composer-setup.php
    php -r "unlink('composer-setup.php');"
-*****************************************************************************************
-   23  sudo mv composer.phar /usr/local/bin/composer --> mover este archivo para que luego se llame a laravel como comando
+   23  sudo mv composer.phar /usr/local/bin/composer --> mover este archivo para que luego se llame a laravel como comando(no es necesario)
    24  composer -> verificar que composer funciona correctamente
    25  composer global require laravel/installer
    42  touch ~/.bash_profile
@@ -30,6 +28,9 @@
    50  cd seminario/
    52  laravel new blog
 ***Si aun no funciona se cierra la terminal y se abre otra
+
+git de tienda de video:
+https://gitlab.com/xCast/videogame-store
 
 
 --------INSTALAR AUTENTICACION

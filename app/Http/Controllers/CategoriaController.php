@@ -13,15 +13,17 @@ class CategoriaController extends Controller
     public function __construct(){
 
     }
-    public function index(Request $request){
-        if($request){gru
-            $consulta=trim($request->get('searchText'));
-            $categorias = DB::table('categoria')->where('nombre','LIKE','%'.$consulta.'%')
-            ->where('condicion','=','True')
-            ->orderBy('nombre')
-            ->paginate(7);
-            return view('almacen.categoria.index',["categorias"=>$categorias,"searchText"=>$consulta]);
-        }
+    public function index(){
+        
+    //public function index(Request $request){
+        // if($request){gru
+        //     $consulta=trim($request->get('searchText'));
+        //     $categorias = DB::table('categoria')->where('nombre','LIKE','%'.$consulta.'%')
+        //     ->where('condicion','=','True')
+        //     ->orderBy('nombre')
+        //     ->paginate(7);
+        //     return view('almacen.categoria.index',["categorias"=>$categorias,"searchText"=>$consulta]);
+        // }
     }
     public function create(){
         return view("almacen.categoria.create");
