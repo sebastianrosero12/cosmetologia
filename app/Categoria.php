@@ -8,9 +8,22 @@ class Categoria extends Model
 {
     protected $table = 'Categoria';
 
-    public function categoria(){
-    	$categoria = Character::all();
-        $genres = Genres::all();
-        return view("vg.character.index", compact('characters', 'genres'));
-    }
+    protected $primaryKey="idcategoria"
+
+    public $timestamps=false;
+
+    protected $fillable=[
+    	'nombre',
+    	'descripcion',
+    	'condicion'
+    ];
+
+    protected $guarded=[
+    ];
+
+    // public function categoria(){
+    // 	$categoria = Character::all();
+    //     $genres = Genres::all();
+    //     return view("vg.character.index", compact('characters', 'genres'));
+    // }
 }
